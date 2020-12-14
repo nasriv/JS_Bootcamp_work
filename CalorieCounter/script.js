@@ -1,8 +1,6 @@
 // Calorie Counter program
 
-var daysOfWeek = [] * 7;
-
-function inputCaloriesByDay(day) {
+function inputCaloriesByDay (day) {
   // returns calories eaten on single day
   if ('Monday') {
     return 3500;
@@ -23,7 +21,7 @@ function inputCaloriesByDay(day) {
   }
 }
 
-function getTotalCalories() {
+function getTotalCalories () {
   // sums up all calories for the week
   return inputCaloriesByDay('Monday') +
   inputCaloriesByDay('Tuesday') +
@@ -34,13 +32,13 @@ function getTotalCalories() {
   inputCaloriesByDay('Sunday');
 }
 
-function getIdealCalories() {
+function getIdealCalories () {
   // defines ideal number of calories to be eaten per week
   var idealDailyCalories = 1800;
   return idealDailyCalories * 7;
 }
 
-function calculateHealthPlan() {
+function calculateHealthPlan () {
   // determine if calories already eaten exceed ideal for day
   var actualCalories = getTotalCalories();
   var idealCalories = getIdealCalories();
